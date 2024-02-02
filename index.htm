@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <title>SideBar Task</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+    .SideNavbar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #5d8158;
+      overflow-x: hidden;
+      padding-top: 0px;
+      transition: 0.5s;
+      display: flex;
+      justify-content: center;
+    }
+    .closeNavbar {
+      font-size: 36px;
+      color: #000000;
+    }
+    #openNavbar {
+      margin-top: 60px;
+      font-size: 30px;
+      color: #5d8158;
+      padding: 10px 40px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div id="SideNavbar" class="SideNavbar">
+        <span onclick="closeNavbar()" id="closeNavbar" class="closeNavbar"
+          >Close</span
+        >
+      </div>
+
+      <span onclick="openNavbar()" id="openNavbar" calss="openNavbar"
+        >Open</span
+      >
+
+    </div>
+
+    <script type="text/javascript" src="javascript.js"></script>
+  </body>
+</html>
